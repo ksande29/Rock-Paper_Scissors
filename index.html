@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link href="style.css" type="text/css" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Rock - Paper - Scissors</h1>
+    <h2>A ten round competition!</h2>
+    <div class="parent">
+        <div id="newGame">
+            <h2>Start over?</h2>
+            <button id="newGameBtn">New Game</button>
+        </div>
+        <div id="selection">
+            <h2>Select one:</h2>
+            <div id="buttons">
+                <button id="rockBtn">Rock</button>
+                <button id="paperBtn">Paper</button>
+                <button id="scissorsBtn">Scissors</button>
+            </div>
+        </div>
+        <div id="score">
+            <h2>Score:</h2>
+            <p>player: 0</p>
+            <p>computer: 0</p>
+        </div>
+    </div>
+    <div id="pictures" class="parent, hidden">
+        <div id="player" class="child">
+            <img src="paper.jpg">
+            <p>You chose: Paper</p>
+        </div>
+        <div id="computer" class="child">
+            <img src="paper.jpg">
+            <p>The computer chose: Paper</p>
+        </div>
+    </div>
+    <div id="winner"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
